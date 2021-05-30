@@ -534,7 +534,7 @@ body {
 }
  
   
-  /* Футер */
+  /*----------------- Футер -------------*/
 
 .logo-footer {
     font-family: Raleway;
@@ -880,18 +880,36 @@ body {
     ;
 }
 
+.modal-link:hover .modal-link-icon,
+.modal-link:focus .modal-link-icon {
+    fill: #2196F3;
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
+.title-modal-window {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+}
+
 .modal-list-item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.modal-list-label {
+.modal-list-label {    
     margin-top: 10px;
     font-family: Roboto;
     font-weight: 400;
@@ -903,10 +921,12 @@ body {
 
 }
 
-.modal-list-input {
+.modal-list-input {      
     width: 448px;
     height: 40px;
     margin-top: 4px;
+    padding-left: 42px;
+    cursor: pointer;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -914,8 +934,21 @@ body {
 }
 
 .modal-list-user-icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
     width: 18px;
     height: 18px;
+}
+
+.modal-list-input:hover,
+.modal-list-input:focus {
+    border: 1px solid #2196F3;
+    
+}
+
+.modal-list-item:hover .modal-list-user-icon {
+    fill: #2196F3;
 }
 
 .modal-comments {
@@ -923,16 +956,72 @@ body {
     flex-direction: column;
 }
 
+.comments-user-field {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    
+    /* font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5); */
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.modal-mailing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    height: 24px;
+    margin-top: 20px;
+
+}
+
+.modal-mailing-input {
+    width: 16px;
+    height: 15px;
+    border: solid 2px #212121;
+    margin-right: 8px;
+}
+
+.modal-mailing-label {
+    margin-right: 4px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-mailing-link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
 .modal-window-btn {
     width: 200px;
     height: 50px;
-
+    
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     
     display: flex;
+    
     justify-content: center;
     align-items: center;
     letter-spacing: 0.06em;
@@ -943,5 +1032,12 @@ body {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
