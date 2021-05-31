@@ -921,6 +921,10 @@ body {
 
 }
 
+.modal-list-input:focus + .modal-list-user-icon {
+    fill: #2196F3;
+}
+
 .modal-list-input {      
     width: 448px;
     height: 40px;
@@ -961,6 +965,7 @@ body {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
+    cursor: pointer;
     
     /* font-family: Roboto;
     font-weight: 400;
@@ -974,7 +979,12 @@ body {
     border-radius: 4px;
 }
 
-.modal-mailing {
+.comments-user-field:hover,
+.comments-user-field:focus {
+    border: 1px solid rgb(33, 150, 243);
+}
+
+/* .modal-mailing {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -982,16 +992,46 @@ body {
     height: 24px;
     margin-top: 20px;
 
-}
+} */
 
-.modal-mailing-input {
+.modal-checkbox-icon {
     width: 16px;
     height: 15px;
-    border: solid 2px #212121;
-    margin-right: 8px;
+    margin-right: 7px;
+    cursor: pointer;
+} 
+
+.modal-checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+       
 }
 
-.modal-mailing-label {
+.modal-checkbox-icon {
+    fill: #FFFFFF;
+    border: solid 2px #212121;
+    border-radius: 2px;
+}
+
+.modal-checkbox-icon:focus,
+.modal-checkbox-icon:hover {
+    border: solid 2px #2196F3;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-icon {
+    fill: #2196F3;  
+    border: solid 2px #2196F3;
+    background-color: #2196F3;
+}
+
+.modal-checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     margin-right: 4px;
 
     font-family: Roboto;
@@ -1002,13 +1042,14 @@ body {
     color: #757575;
 }
 
-.modal-mailing-link {
+.modal-checkbox-link {
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #2196F3;
+    margin-left: 5px;
 }
 
 .modal-window-btn {

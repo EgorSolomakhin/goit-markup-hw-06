@@ -485,13 +485,16 @@
                     <textarea class="comments-user-field" name="comments" id="comments-user" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 </div>
 
-                <div class="modal-mailing">
-                    <input type="checkbox" name="" value="mailing" id="mailing" class="modal-mailing-input">
-                    <label for="mailing" class="modal-mailing-label">Соглашаюсь с рассылкой и принимаю</label>
-                    <a href="" class="modal-mailing-link">Условия договора</a>
-                </div>
-
-                
+                <label class="modal-checkbox-label">
+                    <input type="checkbox" name="" value="mailing"  class="modal-checkbox-input">
+                    <svg class="modal-checkbox-icon">
+                        <use href="./images/icons.svg#icon-check-blue"></use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="modal-checkbox-link">Условия договора</a>
+                </label>
+                  
+                                
                 <div class="form-btn">
                     <button type="submit" class="modal-window-btn">Отправить</button>
                 </div>
