@@ -926,7 +926,7 @@ body {
 }
 
 .modal-list-input {      
-    width: 448px;
+    width: 100%;
     height: 40px;
     margin-top: 4px;
     padding-left: 42px;
@@ -953,6 +953,7 @@ body {
 
 .modal-list-item:hover .modal-list-user-icon {
     fill: #2196F3;
+    
 }
 
 .modal-comments {
@@ -962,37 +963,30 @@ body {
 
 .comments-user-field {
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     padding: 12px 16px;
     cursor: pointer;
     
-    /* font-family: Roboto;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
+   font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5); */
-
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 }
 
+.comments-user-field::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+}
+
 .comments-user-field:hover,
 .comments-user-field:focus {
     border: 1px solid rgb(33, 150, 243);
+    
 }
-
-/* .modal-mailing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
-    height: 24px;
-    margin-top: 20px;
-
-} */
 
 .modal-checkbox-icon {
     width: 16px;
@@ -1019,6 +1013,7 @@ body {
 .modal-checkbox-icon:focus,
 .modal-checkbox-icon:hover {
     border: solid 2px #2196F3;
+        
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-icon {
